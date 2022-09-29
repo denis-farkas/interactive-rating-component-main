@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px) {
+  .content {
+    width: 17rem;
+    height: auto;
+  }
+  .modale {
+    width: 17rem;
+  }
+  .badge {
+    width: 70%;
+  }
+  .thanks {
+    width: 15rem;
+  }
+}
+/*# sourceMappingURL=style_mobile.css.map */

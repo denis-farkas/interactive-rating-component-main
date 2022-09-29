@@ -1,15 +1,170 @@
 body {
-  background-image: url(design/desktop-thank-you-state.jpg);
-  background-repeat: no-repeat;
+  background-color: hsl(228, 11%, 9%);
+}
+
+.container {
   height: 90vh;
   width: 100%;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 21.8rem;
+  height: auto;
+  border-radius: 1.75rem;
+  padding: 30px 30px;
+  background-color: hsl(215, 22%, 15%);
+}
+
+.iconic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: hsl(210, 19%, 18%);
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+.title {
+  font-size: 1.735rem;
+  font-weight: 600;
+  margin-top: 2.3rem;
+  color: #fff;
+  text-align: left;
+}
+
+.request {
+  line-height: 154%;
+  margin-top: 0.8rem;
+  font-size: 0.942rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.note-group {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 19%, 18%);
+  font-size: 17px;
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:not(:checked) + label:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+input[type="radio"]:checked + label {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+input[type="radio"]:not(:checked) + label {
+  background-color: hsl(210, 19%, 18%);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: #fff;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+button {
+  width: 98%;
+  font-size: 18px;
+  font-weight: 700;
+  height: 3.2rem;
+  border-radius: 24px;
+  margin-top: 12px;
+  color: #fff;
+  background-color: hsl(25, 97%, 53%);
+  border: 1px solid hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.image {
+  padding-top: 1rem;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 55%;
+  height: 2rem;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 2rem;
+}
+
+.badged {
+  color: hsl(25, 97%, 53%);
+}
+
+.title-modale {
+  font-size: 1.735rem;
+  font-weight: 600;
+  margin-top: 2.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.modale {
+  display: none;
+  animation-name: modalopen;
+  animation-duration: 0.8s;
+  font-family: "Overpass", sans-serif;
+  flex-direction: column;
+  width: 21.8rem;
+  height: 22.3rem;
+  border-radius: 1.75rem;
+  padding: 30px 30px;
+  background-color: hsl(215, 22%, 15%);
+}
+
+.thanks {
+  margin: 0 auto;
+  padding-top: 12.5px;
+  text-align: center;
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  line-height: 157%;
+  width: 21rem;
 }
