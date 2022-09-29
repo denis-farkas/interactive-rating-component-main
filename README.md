@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/denis-farkas/interactive-rating-component-main)
-- Live Site URL: [live](https://cloudefar.fr/interactive-rating-component-main/)
+- Live Site URL: [live](https://interactive-rating-component-main-6ynbfxg5v-denis-farkas.vercel.app/)
 
 ## My process
 
