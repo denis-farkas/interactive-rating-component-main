@@ -4,6 +4,16 @@
     height: auto;
   }
 
+  input:focus,
+  input:visited,
+  input:active {
+    outline: none;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   .modale {
     width: 17rem;
   }
